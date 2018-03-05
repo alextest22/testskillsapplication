@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //padding
+    <dimen name="normal_items_padding">20dp</dimen>
+    <dimen name="big_items_padding">40dp</dimen>
+    <dimen name="cardview_item_elevation">5dp</dimen>
+
+
+
+    //text size
+    <dimen name="text_size_little">10sp</dimen>
+    <dimen name="text_size_medium">15sp</dimen>
+    <dimen name="text_size_big">20sp</dimen>
+</resources>

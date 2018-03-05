@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="news"
+            type="com.example.alex.testskillsapplication.http.model.Top" />
+
+        <variable
+            name="viewModel"
+            type="com.example.alex.testskillsapplication.activity.News.viewModel.NewsActivityViewModel"/>
+
+        <import
+            type="android.view.View" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="true"
+            android:background="@color/white"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/cardview_item_elevation"
+            android:onClick="@{()->viewModel.openTab(news)}">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{news.title}"
+            android:textColor="@color/colorTextNews"
+            android:textSize="@dimen/text_size_medium"/>
+
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+</layout>

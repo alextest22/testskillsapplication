@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="version"
+            type="String" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please wait"
+            android:textSize="@dimen/text_size_big"
+            android:layout_marginTop="@dimen/big_items_padding"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginBottom="@dimen/normal_items_padding"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/colorPrimary"
+            android:indeterminateTintMode="src_in"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`version `+version}"
+            android:textSize="@dimen/text_size_little"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/normal_items_padding"
+             />
+
+    </FrameLayout>
+</layout>
